@@ -692,3 +692,36 @@ main {
   font-weight: 700;
   color: var(--gold);
 }
+
+details {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  margin-bottom: 1rem;
+  padding: 0.5rem 1rem;
+  transition: background 0.3s;
+}
+details[open] {
+  background: var(--bg-card-hover);
+}
+summary {
+  font-weight: 700;
+  cursor: pointer;
+  padding: 0.5rem 0;
+  color: var(--gold-soft);
+  outline: none;
+  list-style: none;
+}
+summary::-webkit-details-marker {
+  display: none;
+}
+summary::before {
+  content: "◈ ";
+  color: var(--gold);
+}
+.faq-content {
+  padding: 1rem 0;
+  border-top: 1px solid rgba(240, 192, 64, 0.1);
+  line-height: 1.7;
+  color: var(--text-muted);
+}
